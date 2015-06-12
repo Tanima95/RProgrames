@@ -1,0 +1,21 @@
+a<-c(10,20,30,40,50,60)
+linear<-function(search)
+{
+first<-1
+last<-length(a)
+mid=round((first+last)/2)
+while(first<=last)
+  {
+  if(a[mid]<search)
+    first=mid+1
+  else if(a[mid]==search)
+  {
+    print(mid)
+    break
+  }
+    else
+      last=mid-1
+  mid=(first+last)/2
+}
+return(mid)
+}
