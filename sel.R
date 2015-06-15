@@ -1,5 +1,6 @@
+
 a<-sample(1:10000,10000,replace=T)
-selection<-function(a)
+sel1<-function(a)
 {
   for(i in 1:length(a))
     
@@ -30,5 +31,7 @@ selection<-function(a)
     a[min]<-t
     }
   }
+  print(a)
   return(a)
 }
+ 
