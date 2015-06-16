@@ -2,7 +2,7 @@ stopwatch<-function(print=TRUE)
 {
   start<-Sys.time()
   
-  y<-sel1(a)
+  y<-insert(a)
   stop1<-Sys.time()
 print(stop1-start) 
 
