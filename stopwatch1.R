@@ -1,8 +1,7 @@
 stopwatch<-function(print=TRUE)
 {
   startf<-Sys.time()
-
-   start1<-Sys.time()
+start1<-Sys.time()
   sorted<-c(seq(1:10))
   y1<-sel1(sorted)
   stop1<-Sys.time()

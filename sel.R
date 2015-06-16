@@ -1,5 +1,5 @@
 
-a<-sample(1:10000,10000,replace=T)
+a<-c(sample(1:10,10,replace=T))
 sel1<-function(a)
 {
   for(i in 1:length(a))
@@ -32,6 +32,6 @@ sel1<-function(a)
     }
   }
   print(a)
+ 
   return(a)
 }
- 
