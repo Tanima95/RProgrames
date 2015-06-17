@@ -5,8 +5,8 @@ conn <- dbConnect(drv, "jdbc:sqlserver://192.168.0.11\\TECHNOID;databaseName=PTS
 
 countries<- dbGetQuery(conn, "select * from Countries")
 tourists<- dbGetQuery(conn, "select id,Firstname,countryid,CreateDateTime from Tourists")
-
-z<-data.frame(table(tourists$CreateDateTime))
+a<-as.Date(tourists$CreateDateTime,"%Y-%m-%d")
+z<-data.frame(table(a))
 x<-c(z$Var1,z$Freq)
 #rna<-rownames(countries$Name)
 plot1<-barplot(x,xlab = "Date",ylab="counts",las=2,main="counts v/s dates",axes=TRUE,col=rainbow(20),space=0.2)
