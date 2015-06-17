@@ -93,7 +93,7 @@ a1<-data.frame(timer1,nam1)
  mydata<-data.frame(timers,nams)
 tak<-c(mydata$nams,mydata$timers)
 print(tak)
-plotter<-barplot(tak,xlab="number list",ylab="Time Taken",main="no./time",col=c(rainbow(length(a))))
+plotter<-barplot(tak,xlab="number list",ylab="Time Taken",main="no./time",col=c(rainbow(length(nam))),legend=c(nam))
 
 print(plotter) 
 
